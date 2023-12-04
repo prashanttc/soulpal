@@ -6,13 +6,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
- body {
-    
- }
 
 .trial {
     height: 50px;
-    background-color: rgb(149, 255, 62);
+    background-color: #B800FF;
     color: white;
     display: flex;
     font-size: 1em;
@@ -35,11 +32,13 @@
 .mainlogo {
     display: flex;
     width: 250px;
-    height: 69px;
+    height: 80px;
     justify-content: center;
+
 }
 .img1 {
-    width: 140px;
+    width: 160px;
+    height: 80px;
 }
 .nav1 {
     display: flex;
@@ -66,7 +65,7 @@ display: flex;
     border: none; box-shadow: 0px 4px  yellow; 
 }
 .nav1 div:nth-child(4):hover {
-    border: none; box-shadow: 0px 4px  rgb(255, 3, 255); 
+    border: none; box-shadow: 0px 4px  rgb(255, 3, 3); 
 }
 .nav1 div:nth-child(5):hover {
     border: none; box-shadow: 0px 4px  blue; 
@@ -83,20 +82,31 @@ display: flex;
     align-items: center;
     display: flex;
 }
-.nav2 div:hover {
-    border: none; box-shadow: 0px 4px  rgba(0, 0, 0, 0.4); 
-
+.nav2 div:nth-child(1):hover {
+    border: none; box-shadow: 0px 4px  rgb(255, 2, 2); 
+}
+.nav2 div:nth-child(2):hover {
+    border: none; box-shadow: 0px 4px  rgb(22, 255, 22); 
+}
+.nav2 div:nth-child(3):hover {
+    border: none; box-shadow: 0px 4px  yellow; 
+}
+.nav2 div:nth-child(4):hover {
+    border: none; box-shadow: 0px 4px  rgb(255, 3, 255); 
+}
+.nav2 div:nth-child(5):hover {
+    border: none; box-shadow: 0px 4px  blue; 
 }
 .sign-in {
     display: flex;
     width: 200px;
     justify-content: center;
 }
-.sign-in a {
+.signininner  {
     width: 130px;
     height: 50px;
     border-radius: 30px;
-    background-color: rgb(149, 255, 62);
+    background-color:#B800FF;
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     font-size: 1em;
@@ -108,19 +118,18 @@ display: flex;
     justify-content: center;
     text-decoration: none
 }
-.sign-in a:hover {
-    background-color:  rgb(109, 230, 9);
+.signininner:hover {
+    background-color: #B800FF;
 }
 
 .main-body {
     padding-top: 64px;
     height: 650px;
-    background-color: rgb(246, 255, 234);
     display: flex;
     justify-content: center;
 }
 .main-img1 {
-    width: 510.7px;
+    width: 510.7px;  
 }
 .main-img2 {
     width: 510.7px;
@@ -165,7 +174,8 @@ display: flex;
     align-items: center;
     padding-left: 20px;
     width: 336px;
-    background-color: rgb(255, 255, 255);
+    border: none;
+    background-color: #FCEE21;
     margin-left: 20px;
     border-radius: 10px;
     margin-top: 20px ;
@@ -176,16 +186,81 @@ display: flex;
     align-items: center;
 
 }
-
-input[type="checkbox"] {
-    margin-left: 75px;
-    
-     height: 34px;
-     width: 34px;
-
+.check-box i {
+    height: 10px;
+    width: 70px;
+    margin-left: 50px;
 }
+
 .check-box:hover {
-background-color: yellow;
+cursor: pointer;
+}
+.check-box:active {
+    background-color: yellow;
 border: none;
 cursor: pointer;
+}
+
+.main-content h6 {
+ align-items: center;
+ color: rgb(60, 60, 60);
+ text-align: center;
+ font-size: 0.6em;
+ padding-top: 20px;
+ font-weight: 400;
+}
+
+.sign-in2 {  
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.section {
+    height: 398px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+.sectionmain {
+    width: 1160px;
+    height: 398px;
+    display: flex;
+    align-items: center;
+    padding: 64px 0px 128px 0px;
+}
+
+.sec1 {
+    height: 206px;
+    width: 386px;
+
+}
+.sec2 {
+    height: 206px;
+    width: 386px;
+
+}
+.sec3 {
+    height: 206px;
+    width: 386px;
+    margin-left: 24px;
+
+}
+
+.sectionmain img {
+    height: 100px;
+    width: 100px;
+}
+.sec1-1 {
+    display: flex;
+}
+.sectionmain h3 {
+    width: 150px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    padding-top: 20px;
+    color: darkslategray;
+}
+.sectionmain p {
+    padding-top: 10px;
+    color: darkslategray;    
 }
