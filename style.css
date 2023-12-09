@@ -33,14 +33,14 @@
 
 .mainlogo {
     display: flex;
-    width: 250px;
     height: 80px;
     justify-content: center;
 
 }
 
 .img1 {
-    width: 160px;
+    padding-top: 10px;
+    display: flex;
     height: 80px;
 }
 
