@@ -88,7 +88,8 @@ section
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
 }
 
