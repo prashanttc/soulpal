@@ -652,6 +652,10 @@
     padding-left: 70px;
 }
 
+.navbarmobile {
+    display: none;
+}
+
 
 
 
@@ -672,7 +676,74 @@
         display: none;
     }
 
+    .navbarmobile {
+        background-color: rgb(255, 255, 255);
+        color: #B800FF;
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 4px  soild black;
+        justify-content: space-between;
+    }
 
+    .mainmenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;list-style: none;
+        background-color: #ffffff;
+        transition: top 1s ease;
+        display: none;
+    }
+    
+
+    .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        font-size: 2rem;
+    cursor: pointer;
+        right: 20px;
+    }
+
+    .openmenu {
+
+        margin: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: 30px;
+        display: block;
+
+    }
+    .mainmenu li a{
+        display: inline-block;
+        margin: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+     font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+    }
+    .mainmenu a:hover{
+        background-color: grey;
+        cursor: pointer;
+    }
+    .mainmenu li a:hover {
+        background: none;
+        color: #B800FF;
+        font-size: 1.6rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    }
     body {
         width: 100vw;
         overflow-x: hidden;
@@ -787,7 +858,7 @@
         line-height: 1.4;
     }
 
-/* --------------------------------------------------------third sec--------------------------------------------------------------- */
+    /* --------------------------------------------------------third sec--------------------------------------------------------------- */
     .thirdsec {
         margin-top: 60px;
         height: 380px;
@@ -840,12 +911,13 @@
         height: 900px;
         justify-content: center;
     }
+
     .fourthsec-content {
         height: 900px;
         width: auto;
         padding: 30px 0px 0px 0px;
     }
-    
+
     .fourthsec-content h1 {
         width: auto;
         font-weight: 900;
@@ -854,9 +926,11 @@
         text-align: center;
         padding: 0px 30px;
     }
+
     .grid-img {
         display: none;
     }
+
     .grid-container {
         width: auto;
         height: 700px;
@@ -867,12 +941,14 @@
         display: grid;
         padding: 0px 20px;
     }
+
     .item h2 {
-     margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
         color: rgb(109, 108, 108);
         font-size: 1.5em;
         margin-left: 30px;
     }
+
     .item li {
         list-style: none;
         margin-top: 30px;
@@ -882,9 +958,11 @@
         margin-left: 0px;
         font-size: 0.8em;
     }
+
     .item {
         width: 160px;
     }
+
     /* --------------------------------------------footer------------------------------------------------ */
     .footer-1-1 {
         height: 362px;
@@ -893,6 +971,7 @@
         padding-bottom: 90px;
         margin: 0px 0px 0px 0px;
     }
+
     .footer-1-heading {
         font-size: 0.8em;
         text-align: center;
@@ -900,6 +979,7 @@
         color: white;
         margin: 0px 20px 20px 40px;
     }
+
     .footer-1-state {
         margin-top: 40px;
         height: 120px;
@@ -907,6 +987,7 @@
         display: flex;
         justify-content: center;
     }
+
     .box {
         height: 120px;
         background-color: #2D2C2B;
@@ -918,10 +999,12 @@
         margin: 0px 10px;
         border-radius: 8px;
     }
+
     .box-img {
         font-size: 20px;
         color: #ffc400;
     }
+
     .footer-1-state h3 {
         font-size: 1em;
         color: white;
@@ -931,25 +1014,30 @@
         text-align: center;
         margin: 16px 20px 12px 20px;
     }
+
     .state-box2 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .state-box2 h3 {
         margin: 10px;
         margin: 5px 10px;
     }
-    .state-box2 h5{
-        padding:0px 10px;
+
+    .state-box2 h5 {
+        padding: 0px 10px;
         font-size: 0.6em;
         text-align: center;
     }
+
     .state-box3 {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .state-box3 h3 {
         font-size: 0.8em;
         margin: 7px 5px;
@@ -961,90 +1049,109 @@
         padding: 0px 10px;
 
     }
+
     .footer-1 {
         height: 350px;
         background-color: #44423F;
         display: flex;
         justify-content: center;
     }
+
     .footer-1-2 {
         width: 412px;
         padding: 0px 32px;
         height: 350px;
         z-index: 1;
     }
+
     .footer-1-2 h2 {
         margin: 20px 0px 50px;
         color: white;
         font-size: 32px;
     }
+
     .check {
         width: auto;
         height: 126px;
         color: white;
         z-index: 2;
     }
-   
-    
+
+
     .flex {
         display: flex;
         margin: 0px 2px 24px;
     }
-     .check2 {
+
+    .check2 {
         margin-left: -27px;
     }
-    .planbox-2{
-        margin: 40px 30px 0px 30px ;
+
+    .planbox-2 {
+        margin: 40px 30px 0px 30px;
     }
 
     .txt {
-        margin-left: 0px; 
+        margin-left: 0px;
         padding-left: 0px;
     }
+
     .fomter {
         height: 155px;
         border: none;
     }
+
     .fomter2 {
         height: 40px;
     }
+
     .footer-1 h6 {
         color: rgb(137, 137, 137);
         width: auto;
-        margin-top: 5px; 
+        margin-top: 5px;
         text-align: center;
         margin-left: 0px;
     }
+
     .tandc {
         margin-left: 0px;
     }
+
     .sigma {
         height: 200px;
         padding: 0px;
     }
+
     .lasttry {
         margin-left: 0px;
         margin-top: 50px;
     }
+
     .footer-2 {
         width: 100%;
     }
+
     .formality {
         margin-left: 0px;
     }
+
     .formality p:not(:nth-child(1)) {
         display: none;
     }
+
     .formality p {
         margin-left: 20px;
         width: 100px;
     }
-    .socials{
+
+    .socials {
         display: none;
     }
+
     .lan {
-     margin-right: 20px;
+        margin-right: 20px;
     }
+
     .navbar {
         display: none;
     }
